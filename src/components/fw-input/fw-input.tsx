@@ -1,32 +1,20 @@
 import { Component, Prop, h } from '@stencil/core';
-import { format } from '../../utils/utils';
 
 @Component({
-  tag: 'my-component',
-  styleUrl: 'my-component.css',
+  tag: 'fw-input',
+  styleUrl: 'fw-input.css',
   shadow: true
 })
-export class MyComponent {
-  /**
-   * The first name
-   */
-  @Prop() first: string;
-
-  /**
-   * The middle name
-   */
-  @Prop() middle: string;
-
-  /**
-   * The last name
-   */
-  @Prop() last: string;
-
-  private getText(): string {
-    return format(this.first, this.middle, this.last);
-  }
+export class FwInput {
+  @Prop() title: string;
+  @Prop() suggestiontext: string;
+  @Prop() required: boolean;
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div class="input">
+      <div class='label'>{this.title}{this.required?<span class="required">*</span>:''} </div>
+      <input type="text" class="input-box"></input>
+      <div class="suggestionTextArea">{this.suggestiontext}</div>
+    </div>;
   }
 }

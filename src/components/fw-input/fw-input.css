@@ -1,1 +1,65 @@
+:root {
+  --jade: #02b875;
+  --elephant: #183247;
+  --raven: #6F7C87;
+  --chateau: #ACB6BE;
 
+  --zircon: #DADFE3;
+  --porcelain: #EBEEF0;
+  --smoke: #F3F5F7;
+  --athens: #F9F9F9;
+
+  --dodger: #448EE1;
+  --persimmon: #FF5959;
+  --celery: #A0D76A;
+  --candlelight: #FFD012;
+
+  --sunrise: #FFAD1E;
+  --amethyst: #AF64CE;
+  --rhino: #284255;
+  --scotchmist: #FFFADE;
+
+  --pearllusta: #FFFDF6;
+  --mintcream: #F6FEFF;
+
+}
+
+
+.input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 5px;
+}
+
+.input .label {
+  font-size: 12px;
+  display: block;
+  color: #183247;
+}
+
+.input .required {
+  position: relative;
+  top: 3px;
+  margin-left: 3px;
+  font-size: 14px;
+  color: #d72d30;
+  font-weight: 700;
+}
+
+.input .suggestionTextArea {
+  font-size: 10px;
+  margin-top: 3px;
+  margin-left: 3px;
+  color: rgb(82, 82, 82);
+  position: inherit;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
+}
+
+.input .input-box {
+  box-sizing: border-box;
+  height: 30px;
+  width: 400px;
+  border: 1px solid #DADFE3;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+}
