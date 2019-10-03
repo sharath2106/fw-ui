@@ -63,7 +63,7 @@
   border-radius: 2px;
   background-color: #FFFFFF;
 }
-.input .input-box :hover {
+.input .input-box:hover {
   box-sizing: border-box;
   height: 30px;
   width: 400px;
@@ -71,7 +71,7 @@
   border-radius: 2px;
   background-color: #FFFFFF;
 }
-.input .input-box :focus {
+.input .input-box:focus {
   box-sizing: border-box;
   height: 30px;
   width: 400px;
