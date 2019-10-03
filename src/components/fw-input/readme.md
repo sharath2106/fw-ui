@@ -7,11 +7,12 @@
 
 ## Properties
 
-| Property         | Attribute        | Description | Type      | Default     |
-| ---------------- | ---------------- | ----------- | --------- | ----------- |
-| `required`       | `required`       |             | `boolean` | `undefined` |
-| `suggestiontext` | `suggestiontext` |             | `string`  | `undefined` |
-| `title`          | `title`          |             | `string`  | `undefined` |
+| Property      | Attribute     | Description | Type      | Default     |
+| ------------- | ------------- | ----------- | --------- | ----------- |
+| `placeholder` | `placeholder` |             | `string`  | `undefined` |
+| `required`    | `required`    |             | `boolean` | `undefined` |
+| `stateText`   | `state-text`  |             | `string`  | `undefined` |
+| `title`       | `title`       |             | `string`  | `undefined` |
 
 
 ----------------------------------------------

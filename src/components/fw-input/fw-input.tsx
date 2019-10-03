@@ -3,18 +3,19 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'fw-input',
   styleUrl: 'fw-input.css',
-  shadow: true
+  shadow: false
 })
 export class FwInput {
   @Prop() title: string;
-  @Prop() suggestiontext: string;
+  @Prop() placeholder: string;
   @Prop() required: boolean;
+  @Prop() stateText: string;
 
   render() {
     return <div class="input">
       <div class='label'>{this.title}{this.required?<span class="required">*</span>:''} </div>
-      <input type="text" class="input-box"></input>
-      <div class="suggestionTextArea">{this.suggestiontext}</div>
+      <input type="text" class="input-box" placeholder={this.placeholder}></input>
+      <div class="stateText">{this.stateText}</div>
     </div>;
   }
 }

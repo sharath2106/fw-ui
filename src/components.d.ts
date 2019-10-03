@@ -10,8 +10,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface FwInput {
+    'placeholder': string;
     'required': boolean;
-    'suggestiontext': string;
+    'stateText': string;
     'title': string;
   }
 }
@@ -31,8 +32,9 @@ declare global {
 
 declare namespace LocalJSX {
   interface FwInput {
+    'placeholder'?: string;
     'required'?: boolean;
-    'suggestiontext'?: string;
+    'stateText'?: string;
     'title'?: string;
   }
 
