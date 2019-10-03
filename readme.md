@@ -17,3 +17,6 @@ A simple input field web component built using StencilJS.This can be themed with
 7. Once the changes are done. The PR will be merged ⚡️
 
 Thanks for contributing. Mention your name in the PR so that I can list in the contributors section ♥️
+
+## Contributors
+[aachh](https://github.com/aachh)
