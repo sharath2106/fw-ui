@@ -70,16 +70,28 @@
   background-color: #FFFFFF;
 }
 
-.warning-input {
+.input .input-box.warning-input,
+.input .input-box.warning-input:focus,
+.input .input-box.warning-input:hover {
   color: var(--sunrise);
   border: 1px solid var(--sunrise);
   border-radius: 2px;
-  background-color: rgba(var(--sunrise), 0.5);
+  background-color: var(--sunrise-light);
 }
 
-.error-input {
+.input .input-box.error-input,
+.input .input-box.error-input:focus,
+.input .input-box.error-input:hover {
   color: var(--persimmon);
   border: 1px solid var(--persimmon);
   border-radius: 2px;
-  background-color: rgba(var(--persimmon), 0.5);
+  background-color: var(--persimmon-light);
+}
+
+.input .stateText.warning-input {
+  color: var(--sunrise);
+}
+
+.input .stateText.error-input {
+  color: var(--persimmon);
 }

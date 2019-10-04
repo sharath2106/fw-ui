@@ -21,6 +21,7 @@ export namespace Components {
     'label': string;
     'placeholder': string;
     'required': boolean;
+    'state': string;
     'stateText': string;
     'value': string;
   }
@@ -59,6 +60,7 @@ declare namespace LocalJSX {
     'label'?: string;
     'placeholder'?: string;
     'required'?: boolean;
+    'state'?: string;
     'stateText'?: string;
     'value'?: string;
   }

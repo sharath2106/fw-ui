@@ -23,18 +23,17 @@ export class FwInput {
     this.value = '';
   }
 
-  getCssClassName(baseClass: string, state: string){
+  getCssClassName(baseClass: string, state: string) {
     switch (state) {
       case 'warning':
-        console.log(`${baseClass} warning-input`);
-        return `${baseClass} warning-input`;
+        return `warning-input ${baseClass}`;
       case 'error':
-        return `${baseClass} error-input`;
+        return `error-input ${baseClass}`;
       default:
         return baseClass;
     }
   }
-   
+
   render() {
     return <div class="input">
       <div class="label">{this.label}{this.required ? <span class="required">*</span> : ''} </div>
