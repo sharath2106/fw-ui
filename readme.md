@@ -1,15 +1,31 @@
-# fw-input
+# 🚩Let's build a lean UI kit
+
 ## What is it
 
-A simple input field web component built using StencilJS.This can be themed with variable CSS.
+**fw-uikit** aims to build a minimal set of lean and light-weight UI components. 
+
+Here's a sample, a simple input field web component built using StencilJS.This can be themed with variable CSS.
 
 ![](samples/fw-input-demo.gif)
+
+## What we will be building
+
+- TextField (Input)
+- Button
+- Spinner
+- TextArea 
+- CheckBox
+- RadioButton
+- Select
+- Image
+- Table
+- Datepicker
 
 ## To Contribute
 
 1. Fork this repo
 2. Run `npm install`
-3. You can find the component view and css under `src/components/fw-input/fw-input.tsx` and `src/components/fw-input/fw-input.css` respectively. 
+3. You can find the component view and css under the respective component directory. For example, in the case of input field, You can find it under `src/components/fw-input/fw-input.tsx` and `src/components/fw-input/fw-input.css` respectively. 
 4. You can make changes based on the issue/ suggestion 🎉 following the [Stencil documentation](https://stenciljs.com/docs/component)
 4. Once you have made the changes, run using `npm start`
 5. Raise a PR from the feature branch to `dev` branch
