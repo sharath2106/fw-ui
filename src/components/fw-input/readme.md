@@ -12,6 +12,7 @@
 | `label`       | `label`       |             | `string`  | `undefined` |
 | `placeholder` | `placeholder` |             | `string`  | `undefined` |
 | `required`    | `required`    |             | `boolean` | `undefined` |
+| `state`       | `state`       |             | `string`  | `undefined` |
 | `stateText`   | `state-text`  |             | `string`  | `undefined` |
 | `value`       | `value`       |             | `string`  | `undefined` |
 
