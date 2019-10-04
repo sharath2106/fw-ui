@@ -3,7 +3,7 @@
 
 A simple input field web component built using StencilJS.This can be themed with variable CSS.
 
-![](samples/currentwc.png)
+![](samples/fw-input-demo.gif)
 
 ## To Contribute
 
@@ -19,4 +19,5 @@ A simple input field web component built using StencilJS.This can be themed with
 Thanks for contributing. Mention your name in the PR so that I can list in the contributors section ♥️
 
 ## Contributors
-[aachh](https://github.com/aachh)
+- [kaskar2008](https://github.com/kaskar2008)
+- [aachh](https://github.com/aachh)
