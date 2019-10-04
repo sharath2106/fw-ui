@@ -10,12 +10,24 @@ export class FwInput {
   @Prop() placeholder: string;
   @Prop() required: boolean;
   @Prop() stateText: string;
+  @Prop() state: string;
 
   render() {
     return <div class="input">
       <div class='label'>{this.title}{this.required?<span class="required">*</span>:''} </div>
-      <input type="text" class="input-box" placeholder={this.placeholder}></input>
-      <div class="stateText">{this.stateText}</div>
+      <input type="text" class={getCssClassName("input-box", this.state)} placeholder={this.placeholder}></input>
+      <div class={getCssClassName("stateText", this.state)}>{this.stateText}</div>
     </div>;
+  }
+}
+
+const getCssClassName = (baseClass:string, state:string) => {
+  switch (state) {
+    case 'warning':
+      return `${baseClass} warning-input`;
+    case 'error':
+      return `${baseClass} error-input`;
+    default:
+      return baseClass;
   }
 }
