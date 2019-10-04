@@ -3,6 +3,7 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'fw-input',
   styleUrl: 'fw-input.css',
+  assetsDir: 'assets',
   shadow: false
 })
 export class FwInput {
