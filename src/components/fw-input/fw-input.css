@@ -29,6 +29,24 @@
   margin-bottom: 0;
 }
 
+.input .input-wrapper {
+  position: relative;
+  width: 400px;
+}
+.input .input-wrapper .actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.input .input-wrapper .actions .clear-button {
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+}
+
 .input .input-box {
   width: 100%;
   box-sizing: border-box;
