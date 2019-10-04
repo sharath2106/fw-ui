@@ -69,3 +69,17 @@
   border: 1px solid var(--jade);
   background-color: #FFFFFF;
 }
+
+.warning-input {
+  color: var(--sunrise);
+  border: 1px solid var(--sunrise);
+  border-radius: 2px;
+  background-color: rgba(var(--sunrise), 0.5);
+}
+
+.error-input {
+  color: var(--persimmon);
+  border: 1px solid var(--persimmon);
+  border-radius: 2px;
+  background-color: rgba(var(--persimmon), 0.5);
+}
