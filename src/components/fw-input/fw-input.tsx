@@ -24,8 +24,15 @@ export class FwInput {
 
   render() {
     return <div class="input">
-      <div class='label'>{this.title}{this.required?<span class="required">*</span>:''} </div>
-      <input type="text" class="input-box" placeholder={this.placeholder}></input>
+      <div class="label">{this.label}{this.required ? <span class="required">*</span> : ''} </div>
+      <div class="input-wrapper">
+        <input type="text" class="input-box" placeholder={this.placeholder} value={this.value} onInput={(event) => this.handleChange(event)} />
+        {this.value ?
+          <div class="actions">
+            <img class="clear-button" src="assets/close.svg" height="8" onClick={() => this.handleClearClick()} />
+          </div>
+          : ''}
+      </div>
       <div class="stateText">{this.stateText}</div>
     </div>;
   }
