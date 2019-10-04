@@ -7,7 +7,7 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: false
 })
 export class FwInput {
-  @Prop() title: string;
+  @Prop() label: string;
   @Prop() placeholder: string;
   @Prop() required: boolean;
   @Prop() stateText: string;
