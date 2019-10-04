@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
 
-  <link rel="stylesheet" href="/build/fw-input.css"></link>
-  <script type="module" src="/build/fw-input.esm.js"></script>
-  <script nomodule src="/build/fw-input.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <link rel="stylesheet" href="/build/fw-ui.css">
+  </link>
+  <script type="module" src="/build/fw-ui.esm.js"></script>
+  <script nomodule src="/build/fw-ui.js"></script>
+  
 </head>
+
 <body>
 
-  <fw-input label="Name" placeholder="Enter name" state="normal" state-text="Just the first name" required="true"></fw-input>
+  <fw-input label="Name" placeholder="Enter name" state="normal" state-text="" required="true"></fw-input>
+  <fw-datepicker date-format='DD/MM/YYYY' label="Date Picker" current-date="23/11/2019" required="true" min-year="2000"
+    max-year="2020"></fw-datepicker>
 </body>
+
 </html>

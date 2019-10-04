@@ -9,10 +9,11 @@
 
 | Property      | Attribute     | Description | Type      | Default     |
 | ------------- | ------------- | ----------- | --------- | ----------- |
+| `label`       | `label`       |             | `string`  | `undefined` |
 | `placeholder` | `placeholder` |             | `string`  | `undefined` |
 | `required`    | `required`    |             | `boolean` | `undefined` |
 | `stateText`   | `state-text`  |             | `string`  | `undefined` |
-| `title`       | `title`       |             | `string`  | `undefined` |
+| `value`       | `value`       |             | `string`  | `undefined` |
 
 
 ----------------------------------------------

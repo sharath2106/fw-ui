@@ -9,6 +9,14 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface FwDatepicker {
+    'currentDate': string;
+    'dateFormat': string;
+    'label': string;
+    'maxYear': number;
+    'minYear': number;
+    'required': boolean;
+  }
   interface FwInput {
     'label': string;
     'placeholder': string;
@@ -21,17 +29,32 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLFwDatepickerElement extends Components.FwDatepicker, HTMLStencilElement {}
+  var HTMLFwDatepickerElement: {
+    prototype: HTMLFwDatepickerElement;
+    new (): HTMLFwDatepickerElement;
+  };
+
   interface HTMLFwInputElement extends Components.FwInput, HTMLStencilElement {}
   var HTMLFwInputElement: {
     prototype: HTMLFwInputElement;
     new (): HTMLFwInputElement;
   };
   interface HTMLElementTagNameMap {
+    'fw-datepicker': HTMLFwDatepickerElement;
     'fw-input': HTMLFwInputElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface FwDatepicker {
+    'currentDate'?: string;
+    'dateFormat'?: string;
+    'label'?: string;
+    'maxYear'?: number;
+    'minYear'?: number;
+    'required'?: boolean;
+  }
   interface FwInput {
     'label'?: string;
     'placeholder'?: string;
@@ -41,6 +64,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'fw-datepicker': FwDatepicker;
     'fw-input': FwInput;
   }
 }
@@ -51,6 +75,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'fw-datepicker': LocalJSX.FwDatepicker & JSXBase.HTMLAttributes<HTMLFwDatepickerElement>;
       'fw-input': LocalJSX.FwInput & JSXBase.HTMLAttributes<HTMLFwInputElement>;
     }
   }

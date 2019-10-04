@@ -69,3 +69,7 @@
   border: 1px solid var(--jade);
   background-color: #FFFFFF;
 }
+
+.lex{
+  color:red; 
+}
