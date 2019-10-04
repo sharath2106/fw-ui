@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'fw-input',
@@ -18,5 +19,6 @@ export const config: Config = {
       ]
     }
   ],
+  plugins: [sass()],
   globalStyle: 'src/global/variables.css'
 };
