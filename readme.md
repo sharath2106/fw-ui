@@ -39,6 +39,7 @@ Here's a sample, a simple input field web component built using StencilJS.This c
 Thanks for contributing. Mention your name in the PR so that I can list in the contributors section ♥️
 
 ## Contributors
+- [GabriFedi](https://github.com/GabriFedi)
 - [kaskar2008](https://github.com/kaskar2008)
 - [atrievel](https://github.com/atrievel)
 - [aachh](https://github.com/aachh)
