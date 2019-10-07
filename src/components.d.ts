@@ -26,8 +26,6 @@ export namespace Components {
     'value': string;
   }
   interface FwTag {
-    'label': string;
-    'required': boolean;
     'state': string;
     'text': string;
     'tooltip': string;
@@ -79,8 +77,6 @@ declare namespace LocalJSX {
     'value'?: string;
   }
   interface FwTag {
-    'label'?: string;
-    'required'?: boolean;
     'state'?: string;
     'text'?: string;
     'tooltip'?: string;
