@@ -1,0 +1,18 @@
+.tag {
+  padding-top: 2px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 5px;
+  font-size: 15px;
+
+  font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+
+}
+
+.success {
+  border-radius: 5px;
+  border: 1px solid #00ff00;
+  color : #63b65c;
+  background-color: rgba(0, 255, 0, 0.1);
+}
