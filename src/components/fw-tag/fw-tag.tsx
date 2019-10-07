@@ -16,11 +16,12 @@ export class FwTag {
 
   render() {
 
-    return <div >
-      <span class={this.state}>
-        <label class='tag'>
-          {this.text}
+    return <span class={this.state}>
+        <label>
+        <span class='tag'>
+            {this.text}
+          </span>
         </label>
-       </span></div>;
+       </span>;
   }
 }
