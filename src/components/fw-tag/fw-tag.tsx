@@ -21,8 +21,6 @@ export class FwTag {
                   <span class="tooltiptext">Tooltip text</span>
                  </label>
               </span>
-
-            </span>
-      ;
+            </span>;
   }
 }

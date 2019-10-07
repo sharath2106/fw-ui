@@ -6,11 +6,13 @@
 
 Here's a sample, a simple input field web component built using StencilJS.This can be themed with variable CSS.
 
-![](samples/fw-input-demo.gif)
+![](samples/demo.png)
 
 ## What we will be building
 
-- TextField (Input)
+- TextField (Input) 📌
+- Tag 📌
+- Datepicker 📌
 - Button
 - Spinner
 - TextArea 
@@ -19,7 +21,8 @@ Here's a sample, a simple input field web component built using StencilJS.This c
 - Select
 - Image
 - Table
-- Datepicker
+
+
 
 ## To Contribute
 
