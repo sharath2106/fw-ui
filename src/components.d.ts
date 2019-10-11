@@ -17,6 +17,12 @@ export namespace Components {
     'minYear': number;
     'required': boolean;
   }
+  interface FwDropdown {
+    'label': string;
+    'placeholder': string;
+    'required': boolean;
+    'state': string;
+  }
   interface FwInput {
     'label': string;
     'placeholder': string;
@@ -36,6 +42,12 @@ declare global {
     new (): HTMLFwDatepickerElement;
   };
 
+  interface HTMLFwDropdownElement extends Components.FwDropdown, HTMLStencilElement {}
+  var HTMLFwDropdownElement: {
+    prototype: HTMLFwDropdownElement;
+    new (): HTMLFwDropdownElement;
+  };
+
   interface HTMLFwInputElement extends Components.FwInput, HTMLStencilElement {}
   var HTMLFwInputElement: {
     prototype: HTMLFwInputElement;
@@ -43,6 +55,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'fw-datepicker': HTMLFwDatepickerElement;
+    'fw-dropdown': HTMLFwDropdownElement;
     'fw-input': HTMLFwInputElement;
   }
 }
@@ -56,6 +69,12 @@ declare namespace LocalJSX {
     'minYear'?: number;
     'required'?: boolean;
   }
+  interface FwDropdown {
+    'label'?: string;
+    'placeholder'?: string;
+    'required'?: boolean;
+    'state'?: string;
+  }
   interface FwInput {
     'label'?: string;
     'placeholder'?: string;
@@ -67,6 +86,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'fw-datepicker': FwDatepicker;
+    'fw-dropdown': FwDropdown;
     'fw-input': FwInput;
   }
 }
@@ -78,6 +98,7 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'fw-datepicker': LocalJSX.FwDatepicker & JSXBase.HTMLAttributes<HTMLFwDatepickerElement>;
+      'fw-dropdown': LocalJSX.FwDropdown & JSXBase.HTMLAttributes<HTMLFwDropdownElement>;
       'fw-input': LocalJSX.FwInput & JSXBase.HTMLAttributes<HTMLFwInputElement>;
     }
   }
