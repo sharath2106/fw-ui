@@ -15,7 +15,7 @@ export class FwDropdown {
 
   render() {
     return <div class="input">
-      <div class="label">{this.label}{this.required ? <span class="required">*</span> : ''} </div>
+      <div class="label"> {this.label}{this.required ? <span class="required">*</span> : ''} </div>
       <div class="input-wrapper">
         <select class="input-box" >
           <option class="dropdown" value="None">--</option>
