@@ -31,6 +31,11 @@ export namespace Components {
     'stateText': string;
     'value': string;
   }
+  interface FwTag {
+    'state': string;
+    'text': string;
+    'tooltip': string;
+  }
 }
 
 declare global {
@@ -53,10 +58,17 @@ declare global {
     prototype: HTMLFwInputElement;
     new (): HTMLFwInputElement;
   };
+
+  interface HTMLFwTagElement extends Components.FwTag, HTMLStencilElement {}
+  var HTMLFwTagElement: {
+    prototype: HTMLFwTagElement;
+    new (): HTMLFwTagElement;
+  };
   interface HTMLElementTagNameMap {
     'fw-datepicker': HTMLFwDatepickerElement;
     'fw-dropdown': HTMLFwDropdownElement;
     'fw-input': HTMLFwInputElement;
+    'fw-tag': HTMLFwTagElement;
   }
 }
 
@@ -83,11 +95,17 @@ declare namespace LocalJSX {
     'stateText'?: string;
     'value'?: string;
   }
+  interface FwTag {
+    'state'?: string;
+    'text'?: string;
+    'tooltip'?: string;
+  }
 
   interface IntrinsicElements {
     'fw-datepicker': FwDatepicker;
     'fw-dropdown': FwDropdown;
     'fw-input': FwInput;
+    'fw-tag': FwTag;
   }
 }
 
@@ -100,6 +118,7 @@ declare module "@stencil/core" {
       'fw-datepicker': LocalJSX.FwDatepicker & JSXBase.HTMLAttributes<HTMLFwDatepickerElement>;
       'fw-dropdown': LocalJSX.FwDropdown & JSXBase.HTMLAttributes<HTMLFwDropdownElement>;
       'fw-input': LocalJSX.FwInput & JSXBase.HTMLAttributes<HTMLFwInputElement>;
+      'fw-tag': LocalJSX.FwTag & JSXBase.HTMLAttributes<HTMLFwTagElement>;
     }
   }
 }
